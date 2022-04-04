@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Layout dengan CSS</title>
+    <style type="text/css">
+    awal{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+ 
+    body{
+    background-color: rgb(235, 213, 226);
+    }
+ 
+    .badan-utama
+    {
+    max-width: 1080px;
+    margin: 20px auto;
+    background-color: rgb(179, 209, 221);
+    padding: 15px;
+    overflow: hidden;
+    }
+ 
+    header{
+    background-color: rgb(216, 195, 137);
+    color: rgb(31, 18, 18);
+    padding: 20px;
+    }
+ 
+    .navigasi ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(9, 75, 25);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    }
+ 
+    .navigasi li{
+    float: left;
+    }
+ 
+    .navigasi li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    }
+ 
+    .navigasi li a:hover 
+    {
+    background-color:red;
+    transition-duration: 2s;
+    }
+ 
+    .kotak{
+    border: 1px solid rgb(51, 199, 174);
+    padding: 10px;
+    margin-bottom: 15px;
+    }
+ 
+    .kotak p{
+    background-color: rgb(68, 190, 98);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 13px;
+    }
+ 
+    .menu-kiri{
+    width: 250px;
+    margin-right: 10px;
+    float: left;
+    }
+ 
+    .menu-tengah{
+    width: 530px;
+    margin-right: 10px;
+    float: left;
+    }
+ 
+    .tanggal-posting{
+    color: gray;
+    text-align: right;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: block;
+    }
+ 
+    .tombol{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    width: 120px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    }
+ 
+    .tombol:hover{
+    background-color: black;
+    transition-duration: 2s;
+    }
+ 
+    .tombol-pesan{
+    background-color: green;
+    }
+ 
+    .menu-kanan{
+    width: 250px;
+    float: left;
+    }
+ 
+    .menu-kanan, .menu-kiri, .menu-tengah{
+    margin-bottom: 15px;
+    }
+ 
+    footer{
+    clear: both;
+    background-color: rgb(20, 220, 170);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    }
+ 
+    .menu-biodata ul{
+    list-style-type: none;
+    }
+ 
+    .menu-biodata ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 13px;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 12px;
+    color: black;
+    }
+ 
+    .menu-biodata ul li a:hover{
+    color: rgb(34, 87, 122);
+    border-bottom: 5px double rgb(122, 173, 197);
+    transition-duration: 2s;
+    }
+ 
+    @media screen and (max-width:1080px){
+        .badan-utama{
+        width: 100%;
+        }
+ 
+        .menu-kiri{
+        width: 25%;
+        }
+ 
+        .menu-tengah{
+        width: 68%;
+        float: right;
+        }
+ 
+        .menu-kanan{
+        clear: both;
+        float: none;
+        width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="badan-utama">
+        
+        <header>
+            <h2>Assalamualaikum Wr Wb</h2>
+            <p>Welcome in my Desain Web </p>
+        </header>
+ 
+        <nav class="navigasi">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#kontak">About Me</a></li>
+            </ul>
+        </nav>
+ 
+        <div class="menu-kiri">
+            <div class="kotak">
+                <h3>Biodata Diri</h3>
+                <p>Nama </p>
+                <p>Jenis Kelamin</p>
+                <p>Tempat, Tanggal Lahir</p>
+                <p>Alamat</p>
+                <p>Email</p>
+            </div>
+        </div>
+ 
+        <div class="menu-tengah">
+            <div class="kotak">
+                <span class="tanggal-posting">
+                    Diposting pada 21 April 2021
+                </span>
+                <p>pe</p>
+                <p>co</p>
+                <p>gatau</p>
+                <p>ngemper</p>
+                <p>gapunya</p>
+            </div>
+        </div>
+ 
+        <div class="menu-kanan">
+            <div class="kotak">
+                <h3>Sosial Media</h3>
+                
+                <nav class="menu-sosial">
+                    <ul>
+                        <li><img src="ig.jpeg" alt="" width="40px"><a href="#">Instagram</a></li>
+                        <li><img src="gitlab.png" alt="" width="40px"><a href="#">Gitlab</a></li>
+                        <li><img src="yt.png" alt="" width="40px"><a href="#">Youtube</a></li>
+                        <li><img src="wa.png" alt="" width="40px"><a href="#">Whatsapp</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+ 
+        <footer>
+            @copyright 2021 || by kepodech
+        </footer>
+ 
+    </div>
+</body>
+</html>
